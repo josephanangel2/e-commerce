@@ -1,0 +1,125 @@
+<?= $this->doctype() ?>
+
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta charset="UTF-8">
+		<title>index4</title>
+
+        <!-- Le styles -->
+        <?= $this->headLink(['rel' => 'shortcut icon', 'type' => 'image/vnd.microsoft.icon', 'href' => $this->basePath() . '/img/favicon.ico'])
+            ->prependStylesheet($this->basePath('css/animate.css'))
+            ->prependStylesheet($this->basePath('css/bootstrap.min.css'))
+            ->prependStylesheet($this->basePath('css/font-awesome.css'))
+			->prependStylesheet($this->basePath('css/pe-icon-7-stroke.css'))
+			->prependStylesheet($this->basePath('css/owl.carousel.css'))
+			->prependStylesheet($this->basePath('css/chosen.css'))
+			->prependStylesheet($this->basePath('css/jquery.bxslider.css'))
+			->prependStylesheet($this->basePath('css/style.css'))
+			
+			
+			
+			
+		?>
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,600i,700,700i" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,500i,700" rel="stylesheet">
+
+        <!-- Scripts -->
+        <?= $this->headScript()
+            ->prependFile($this->basePath('js/jquery-2.1.4.min.js'))
+            ->prependFile($this->basePath('js/bootstrap.min.js'))
+			->prependFile($this->basePath('js/jquery-ui.min.js'))
+			->prependFile($this->basePath('js/owl.carousel.min.js'))
+			->prependFile($this->basePath('js/wow.min.js'))
+			->prependFile($this->basePath('js/jquery.actual.min.js'))
+			->prependFile($this->basePath('js/chosen.jquery.min.js'))
+			->prependFile($this->basePath('js/jquery.bxslider.min.js'))
+			->prependFile($this->basePath('js/jquery.sticky.js'))
+			->prependFile($this->basePath('js/jquery.elevateZoom.min.js'))
+			
+			->prependFile($this->basePath('js/function.js'))
+			->prependFile($this->basePath('js/Modernizr.js'))
+			->prependFile($this->basePath('js/jquery.plugin.js'))
+			->prependFile($this->basePath('js/jquery.countdown.js'))
+		
+			
+			
+			->prependFile($this->basePath('js/fancybox/source/jquery.fancybox.pack.js'))
+			->prependFile($this->basePath('js/fancybox/source/helpers/jquery.fancybox-media.js'))
+			->prependFile($this->basePath('js/fancybox/source/helpers/jquery.fancybox-thumbs.js'))
+			
+			
+        ?>
+    </head>
+	
+<body class="index-opt-4">
+
+
+
+	<div class="wrapper">
+
+        <form id="block-search-mobile" method="get" class="block-search-mobile">
+            <div class="form-content">
+                <div class="control">
+                    <a href="#" class="close-block-serach"><span class="icon fa fa-times"></span></a>
+                    <input type="text" name="search" placeholder="Search" class="input-subscribe">
+                    <button type="submit" class="btn search">
+                        <span><i class="fa fa-search" aria-hidden="true"></i></span>
+                    </button>
+                </div>
+            </div>
+        </form>
+
+		<!--Start  HEADER -->
+
+		<header class="site-header header-opt-1">
+
+            <!-- header-top  start-->
+            <?php echo  $this->render('elements/topheader'); ?>
+            <!-- header-top end -->
+			
+            <!-- header-content start-->
+			<?php echo  $this->render('elements/headercontent'); ?>
+			<!-- header-content end -->
+			
+            <!-- header-menu-bar -->
+			<?php echo  $this->render('elements/header-menu-bar'); ?>
+            <!-- header-menu-bar -->
+
+        </header>
+		
+		<!-- end HEADER -->
+
+		<!-- Main content start -->
+		
+            <?php echo  $this->content; ?>
+		<!-- Main content end -->
+		
+        
+		
+		
+		 
+		 
+		 <!-- FOOTER start -->
+
+		<footer class="site-footer footer-opt-2">
+		    
+			<!-- topfooter start -->
+			<?php echo  $this->render('elements/topfooter'); ?>
+            <!-- topfooter end -->
+			
+			<!-- middlefooter start -->
+			<?php echo  $this->render('elements/middlefooter'); ?>
+            <!-- middlefooter end -->
+						
+			<!-- bottomfooter start -->
+			<?php echo  $this->render('elements/bottomfooter'); ?>
+            <!-- bottomfooter end -->
+
+        </footer>
+		  <!-- end FOOTER -->	
+         <?= $this->inlineScript() ?>
+	</div>
+    </body>
+</html>
