@@ -1493,7 +1493,7 @@ input[type=password]{
 
 .form-search .form-control{
 
-    width: 419.899px;
+    width: 565.899px;
 
     display: inline-block;
 
@@ -1503,7 +1503,7 @@ input[type=password]{
 
     box-shadow: none;
 
-    border-left: 1px solid #e6e6e6;
+    
 
     border-radius: 0;
 
@@ -1513,7 +1513,7 @@ input[type=password]{
 }
 .box-group .btn-search{
 
-  height: 43px;
+  height: 33px;
 
   background-color: #31629f;
 

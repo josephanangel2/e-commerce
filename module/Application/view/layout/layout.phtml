@@ -4,56 +4,26 @@
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta charset="UTF-8">
-		<title>index4</title>
+		<title>E-commerce</title>
 
         <!-- Le styles -->
         <?= $this->headLink(['rel' => 'shortcut icon', 'type' => 'image/vnd.microsoft.icon', 'href' => $this->basePath() . '/img/favicon.ico'])
-            ->prependStylesheet($this->basePath('css/animate.css'))
-            ->prependStylesheet($this->basePath('css/bootstrap.min.css'))
-            ->prependStylesheet($this->basePath('css/font-awesome.css'))
-			->prependStylesheet($this->basePath('css/pe-icon-7-stroke.css'))
-			->prependStylesheet($this->basePath('css/owl.carousel.css'))
-			->prependStylesheet($this->basePath('css/chosen.css'))
-			->prependStylesheet($this->basePath('css/jquery.bxslider.css'))
 			->prependStylesheet($this->basePath('css/style.css'))
-			
-			
-			
-			
+			->prependStylesheet($this->basePath('css/jquery.bxslider.css'))
+			->prependStylesheet($this->basePath('css/chosen.css'))
+			->prependStylesheet($this->basePath('css/owl.carousel.css'))
+			->prependStylesheet($this->basePath('css/pe-icon-7-stroke.css'))
+			->prependStylesheet($this->basePath('css/font-awesome.css'))
+            ->prependStylesheet($this->basePath('css/bootstrap.min.css'))
+			->prependStylesheet($this->basePath('css/animate.css'))
 		?>
-		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,600i,700,700i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,600i,700,700i" rel="stylesheet">
 
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,500i,700" rel="stylesheet">
 
-        <!-- Scripts -->
-        <?= $this->headScript()
-            ->prependFile($this->basePath('js/jquery-2.1.4.min.js'))
-            ->prependFile($this->basePath('js/bootstrap.min.js'))
-			->prependFile($this->basePath('js/jquery-ui.min.js'))
-			->prependFile($this->basePath('js/owl.carousel.min.js'))
-			->prependFile($this->basePath('js/wow.min.js'))
-			->prependFile($this->basePath('js/jquery.actual.min.js'))
-			->prependFile($this->basePath('js/chosen.jquery.min.js'))
-			->prependFile($this->basePath('js/jquery.bxslider.min.js'))
-			->prependFile($this->basePath('js/jquery.sticky.js'))
-			->prependFile($this->basePath('js/jquery.elevateZoom.min.js'))
-			
-			->prependFile($this->basePath('js/function.js'))
-			->prependFile($this->basePath('js/Modernizr.js'))
-			->prependFile($this->basePath('js/jquery.plugin.js'))
-			->prependFile($this->basePath('js/jquery.countdown.js'))
-		
-			
-			
-			->prependFile($this->basePath('js/fancybox/source/jquery.fancybox.pack.js'))
-			->prependFile($this->basePath('js/fancybox/source/helpers/jquery.fancybox-media.js'))
-			->prependFile($this->basePath('js/fancybox/source/helpers/jquery.fancybox-thumbs.js'))
-			
-			
-        ?>
     </head>
 	
-<body class="page-product list-view">
+<body class="index-opt-3">
 
 
 
@@ -76,16 +46,18 @@
 		<header class="site-header header-opt-1">
 
             <!-- header-top  start-->
-            <?php echo  $this->render('elements/topheader'); ?>
+            <?php // echo  $this->render('elements/topheader');  ?>
             <!-- header-top end -->
 			
-            <!-- header-content start-->
-			<?php echo  $this->render('elements/headercontent'); ?>
-			<!-- header-content end -->
+            
 			
             <!-- header-menu-bar -->
 			<?php echo  $this->render('elements/header-menu-bar'); ?>
             <!-- header-menu-bar -->
+			
+			<!-- header-content start-->
+			<?php echo  $this->render('elements/headercontent'); ?>
+			<!-- header-content end -->
 
         </header>
 		
@@ -106,7 +78,7 @@
 		<footer class="site-footer footer-opt-2">
 		    
 			<!-- topfooter start -->
-			<?php echo  $this->render('elements/topfooter'); ?>
+			<?php // echo  $this->render('elements/topfooter'); ?>
             <!-- topfooter end -->
 			
 			<!-- middlefooter start -->
@@ -120,6 +92,42 @@
         </footer>
 		  <!-- end FOOTER -->	
          <?= $this->inlineScript() ?>
+		 
+		 <a href="#" id="scrollup" title="Scroll to Top">Scroll</a>
 	</div>
+	        <!-- Scripts -->
+        <?= $this->headScript()
+          
+			
+						
+			
+			
+			
+			->prependFile($this->basePath('js/jquery.countdown.js'))
+			
+			
+			
+			
+			
+			->prependFile($this->basePath('js/jquery.plugin.js'))
+			->prependFile($this->basePath('js/Modernizr.js'))
+			->prependFile($this->basePath('js/function.js'))
+			->prependFile($this->basePath('js/fancybox/source/helpers/jquery.fancybox-thumbs.js'))
+			->prependFile($this->basePath('js/fancybox/source/helpers/jquery.fancybox-media.js'))
+			->prependFile($this->basePath('js/fancybox/source/jquery.fancybox.pack.js'))
+
+			->prependFile($this->basePath('js/jquery.elevateZoom.min.js'))
+			->prependFile($this->basePath('js/jquery.sticky.js'))
+			->prependFile($this->basePath('js/jquery.bxslider.min.js'))
+			->prependFile($this->basePath('js/chosen.jquery.min.js'))
+			->prependFile($this->basePath('js/jquery.actual.min.js'))
+			->prependFile($this->basePath('js/wow.min.js'))
+			->prependFile($this->basePath('js/owl.carousel.min.js'))
+			->prependFile($this->basePath('js/jquery-ui.min.js'))
+			->prependFile($this->basePath('js/bootstrap.min.js'))
+			->prependFile($this->basePath('js/jquery-2.1.4.min.js'))
+	
+        ?>	
     </body>
+
 </html>

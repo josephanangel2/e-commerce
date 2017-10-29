@@ -1,5 +1,4 @@
-
-            <div class="header-menu-bar header-sticky">
+            <div class="header-menu-bar header-sticky" style="margin-top: 0px;"> <!---in line custom style margin--->
 
                 <div class="header-menu-nav menu-style-2">
 
@@ -304,52 +303,45 @@
                                 <ul class="header-nav krystal-nav">
                                     <li class="btn-close hidden-md"><i class="fa fa-times" aria-hidden="true"></i></li>
 
-                                    <li class="menu-item-has-children arrow">
 
-                                        <a href="index2.html" class="dropdown-toggle">Home</a>
+									<li >
 
-                                        <span class="toggle-submenu hidden-md"></span>
-                                        <ul class="submenu parent-megamenu">
-                                            <li class="menu-item">
-                                                <a href="index.html">Home 1</a>
-                                            </li>
-                                            <li class="menu-item">
-                                                <a href="index2.html">Home 2</a>
-                                            </li>
-                                            <li class="menu-item">
-                                                <a href="index3.html">Home 3</a>
-                                            </li>
-                                            <li class="menu-item">
-                                                <a href="index4.html">Home 4</a>
-                                            </li>
-                                            <li class="menu-item">
-                                                <a href="index5.html">Home 5</a>
-                                            </li>
-                                        </ul>
+                                        <a href="<?= $this->url('home'); ?>" class="dropdown-toggle">Home</a>
+
 
                                     </li>
 
                                     <li class="menu-item-has-children arrow">
 
-                                        <a href="#" class="dropdown-toggle">Demos</a>
+                                        <a href="<?= $this->url('aboutus'); ?>" class="dropdown-toggle">About us</a>
 
                                         <span class="toggle-submenu hidden-md"></span>
 
                                         <ul class="submenu parent-megamenu">
+										    <li class="menu-item">
+                                                <a href="<?= $this->url('aboutus'); ?>" class="dropdown-toggle">About Us</a>
+                                            </li>
+											
                                             <li class="menu-item">
-                                                <a href="grid-product.html">Grid Product</a>
+                                                 <a href="<?= $this->url('contact'); ?>" class="dropdown-toggle">Contact Us</a>
+                                            </li>
+											
+											<li class="menu-item">
+                                                <a href="<?= $this->url('blogList');?>" class="dropdown-toggle">Blog</a>
+                                            </li>
+											
+											<li class="menu-item">
+											<a href="#" class="dropdown-toggle">FAQ</a>
+											</li>
+											
+                                            <li class="menu-item">
+                                                <a href="#">How we do</a>
                                             </li>
                                             <li class="menu-item">
-                                                <a href="list-product.html">List Product</a>
+                                                <a href="#">Office Location</a>
                                             </li>
                                             <li class="menu-item">
-                                                <a href="list-product-right.html">List Product Right</a>
-                                            </li>
-                                            <li class="menu-item">
-                                                <a href="grid-product-right.html">Grid Product Right</a>
-                                            </li>
-                                            <li class="menu-item">
-                                                <a href="detail.html">Detail Product</a>
+                                                <a href="#">We care</a>
                                             </li>
                                         </ul>
 
@@ -357,11 +349,11 @@
 
                                     <li class="menu-item-has-children arrow item-megamenu item-megamenu-sub">
 
-                                        <a href="#" class="dropdown-toggle">Fashions</a>
+                                 <!--- <a href="#" class="dropdown-toggle">Products List</a>
 
                                         <span class="toggle-submenu hidden-md"></span>
 
-                                        <div class="submenu parent-megamenu megamenu">
+                                       <div class="submenu parent-megamenu megamenu">
 
                                             <div class="row">
 
@@ -465,60 +457,20 @@
 
                                             </div>
 
-                                        </div>
+                                        </div> ---->
+										<li><a href="<?= $this->url('login'); ?>"><i class="fa fa-user" aria-hidden="true"></i>Register / Sign in</a></li>
+										<li><a href="#"><i class="fa fa-user" aria-hidden="true"></i>Log Out</a></li>
 
                                     </li>
 
-                                    <li class="menu-item-has-children arrow">
 
-                                        <a href="#" class="dropdown-toggle">Sub Menu</a>
+                                    
 
-                                        <span class="toggle-submenu hidden-md"></span>
 
-                                        <ul class="submenu parent-megamenu">
-                                            <li class="menu-item">
-                                                <a href="checkout.html">Checkout</a>
-                                            </li>
-                                            <li class="menu-item">
-                                                <a href="shopping-cart.html">Shopping Cart</a>
-                                            </li>
-                                            <li class="menu-item">
-                                                <a href="contact-us.html">Contact Us</a>
-                                            </li>
-                                            <li class="menu-item">
-                                                <a href="login.html">Login</a>
-                                            </li>
-                                        </ul>
+                                    
 
-                                    </li>
-
-                                    <li>
-
-                                        <a href="contact-us.html" class="dropdown-toggle">Contact Us</a>
-
-                                        <span class="toggle-submenu hidden-md"></span>
-
-                                    </li>
-
-                                    <li class="menu-item-has-children arrow">
-
-                                        <a href="#" class="dropdown-toggle">Blog</a>
-
-                                        <span class="toggle-submenu hidden-md"></span>
-
-                                        <ul class="submenu parent-megamenu">
-                                            <li class="menu-item">
-                                                <a href="blog-grid.html">Blog Grid</a>
-                                            </li>
-                                            <li class="menu-item">
-                                                <a href="blog-list.html">Blog List</a>
-                                            </li>
-                                            <li class="menu-item">
-                                                <a href="blog-single.html">Blog Single</a>
-                                            </li>
-                                        </ul>
-
-                                    </li>
+                                   
+                                    									
 
                                 </ul>
 

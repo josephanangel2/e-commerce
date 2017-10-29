@@ -1,4 +1,4 @@
-<div class="header-content">
+<div class="header-content " style="margin-top: -20px;"> <!---custom style margin--->
 
                 <div class="container">
 
@@ -22,45 +22,17 @@
 
                             <!-- block search -->
 
-                            <div class="block-search">
+                            <div class="block-search" style="margin-top: 7px;"><!---custom style margin--->
 
                                 <div class="block-content">
 
-                                    <div class="categori-search  ">
-
-                                        <select data-placeholder="All Categories" class="chosen-select categori-search-option">
-                                            <option value="">All Categories</option>
-                                            <optgroup label="- Electronics">
-                                              <option>Batteries & Chargens</option>
-                                              <option>Headphone & Headsets</option>
-                                              <option>Mp3 Player & Acessories</option>
-                                            </optgroup>
-                                            <optgroup label="- Smartphone & Table">
-                                              <option>Batteries & Chargens</option>
-                                              <option>Headphone & Headsets</option>
-                                              <option>Mp3 Player & Acessories</option>
-                                            </optgroup>
-                                            <optgroup label="- Electronics">
-                                              <option>Batteries & Chargens</option>
-                                              <option>Headphone & Headsets</option>
-                                              <option>Mp3 Player & Acessories</option>
-                                            </optgroup>
-                                            <optgroup label="- Smartphone & Table">
-                                              <option>Batteries & Chargens</option>
-                                              <option>Headphone & Headsets</option>
-                                              <option>Mp3 Player & Acessories</option>
-                                            </optgroup>
-                                        </select>
-
-                                    </div>
-
-                                    <div class="form-search">
+                                    <div class="form-search" >
 
                                         <form>
 
-                                            <div class="box-group">
+                                            <div class="box-group" >
 
-                                                <input type="text" class="form-control" placeholder="Searh entire store here...">
+                                                <input type="text" class="form-control" placeholder="Searh entire store here..." >
 
                                                 <button class="btn btn-search" type="button"><span>search</span></button>
 
@@ -95,9 +67,9 @@
 
                                     <span class="counter-your-cart">
 
-                                        <span class="counter-label">Your Cart:</span>
+                                       <!-- <span class="counter-label">Your Cart:</span>
 
-                                        <span class="counter-price">$00.00</span>
+                                            <span class="counter-price">$00.00</span> --->
 
                                     </span>
 
@@ -190,9 +162,9 @@
 
                                             <div class="actions">
 
-                                                <a class="btn btn-viewcart" href="#">View cart</a>
+                                                <a class="btn btn-viewcart" href="<?= $this->url('viewcart'); ?>">View cart</a><!------ shoppingcart is a name of phtml file which is available in Application/view/application/shopping-cart folder-->
 
-                                                <a class="btn btn-checkout" href="#">Checkout</a>
+                                                <a class="btn btn-checkout" href="<?= $this->url('checkout'); ?>">Checkout</a>
 
                                             </div>
 
@@ -206,7 +178,7 @@
 
                             <a href="#" class="hidden-md search-hidden"><span class="pe-7s-search"></span></a>
 
-                            <a class="wishlist-minicart" href="#"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
+                            <a class="wishlist-minicart" href="<?= $this->url('wishlist'); ?>"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
 
                         </div>
 

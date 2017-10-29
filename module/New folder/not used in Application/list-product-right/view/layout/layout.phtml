@@ -4,10 +4,10 @@
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta charset="UTF-8">
-		<title>list-product</title>
+		<title>shopping-cart</title>
 
         <!-- Le styles -->
-        <?= $this->headLink(['rel' => 'shortcut icon', 'type' => 'image/vnd.microsoft.icon', 'href' => $this->basePath() . '/img/favicon.ico'])
+       <?= $this->headLink(['rel' => 'shortcut icon', 'type' => 'image/vnd.microsoft.icon', 'href' => $this->basePath() . '/img/favicon.ico'])
             ->prependStylesheet($this->basePath('css/animate.css'))
             ->prependStylesheet($this->basePath('css/bootstrap.min.css'))
             ->prependStylesheet($this->basePath('css/font-awesome.css'))
@@ -16,44 +16,41 @@
 			->prependStylesheet($this->basePath('css/chosen.css'))
 			->prependStylesheet($this->basePath('css/jquery.bxslider.css'))
 			->prependStylesheet($this->basePath('css/style.css'))
-			
-			
-			
-			
+			->prependStylesheet('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,600i,700,700i')
+			->prependStylesheet('https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,500i,700')
+			//<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,600i,700,700i" rel="stylesheet">
+            //<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,500i,700" rel="stylesheet">
 		?>
-		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,600i,700,700i" rel="stylesheet">
-
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,500i,700" rel="stylesheet">
-
+		
         <!-- Scripts -->
         <?= $this->headScript()
-            ->prependFile($this->basePath('js/jquery-2.1.4.min.js'))
+           
             ->prependFile($this->basePath('js/bootstrap.min.js'))
 			->prependFile($this->basePath('js/jquery-ui.min.js'))
-			->prependFile($this->basePath('js/owl.carousel.min.js'))
-			->prependFile($this->basePath('js/wow.min.js'))
 			->prependFile($this->basePath('js/jquery.actual.min.js'))
 			->prependFile($this->basePath('js/chosen.jquery.min.js'))
 			->prependFile($this->basePath('js/jquery.bxslider.min.js'))
 			->prependFile($this->basePath('js/jquery.sticky.js'))
 			->prependFile($this->basePath('js/jquery.elevateZoom.min.js'))
-			
+			->prependFile($this->basePath('js/jquery.countdown.js'))
+			->prependFile($this->basePath('js/owl.carousel.min.js'))
+			->prependFile($this->basePath('js/wow.min.js'))
+			->prependFile($this->basePath('js/fancybox/source/helpers/jquery.fancybox-media.js'))
+			->prependFile($this->basePath('js/fancybox/source/helpers/jquery.fancybox-thumbs.js'))
+			->prependFile($this->basePath('js/fancybox/source/jquery.fancybox.pack.js'))
 			->prependFile($this->basePath('js/function.js'))
 			->prependFile($this->basePath('js/Modernizr.js'))
 			->prependFile($this->basePath('js/jquery.plugin.js'))
-			->prependFile($this->basePath('js/jquery.countdown.js'))
-		
+			
+			 ->prependFile($this->basePath('js/jquery-2.1.4.min.js'))
 			
 			
-			->prependFile($this->basePath('js/fancybox/source/jquery.fancybox.pack.js'))
-			->prependFile($this->basePath('js/fancybox/source/helpers/jquery.fancybox-media.js'))
-			->prependFile($this->basePath('js/fancybox/source/helpers/jquery.fancybox-thumbs.js'))
 			
 			
         ?>
     </head>
 	
-<body class="index-opt-3">
+<body class="page-product list-view">
 
 
 
@@ -92,7 +89,6 @@
 		<!-- end HEADER -->
 
 		<!-- Main content start -->
-		
             <?php echo  $this->content; ?>
 		<!-- Main content end -->
 		
